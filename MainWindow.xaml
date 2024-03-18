@@ -5,52 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Saint_Patrick"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="900" ResizeMode="NoResize" Background="Aquamarine">
+        Title="MainWindow" Height="500" MinHeight="300" Width="900" MinWidth="500" ResizeMode="CanResizeWithGrip" Background="Aquamarine">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF00FF10" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <!-- LINE 0 -->
-        <StackPanel Grid.Row="0"  Grid.Column="0" Background="red">
-            
+        <StackPanel Grid.Row="0"  Grid.Column="0" Background="#FFFF7D7D">
+
         </StackPanel>
-        <StackPanel Grid.Row="0"  Grid.Column="1" Background="DarkRed">
-            
-        </StackPanel>
-        <StackPanel Grid.Row="0"  Grid.Column="2" Background="IndianRed">
+        <StackPanel Grid.Row="0"  Grid.Column="1" Background="#FFC83D3D"/>
+        <StackPanel Grid.Row="0"  Grid.Column="2" Background="#FFD26A6A">
 
         </StackPanel>
 
         <!-- LINE 1 -->
-        <StackPanel Grid.Row="1"  Grid.Column="0" Background="Green">
-            
+        <StackPanel Grid.Row="1"  Grid.Column="0" Background="#FF74F974">
+
         </StackPanel>
         <StackPanel Grid.Row="1"  Grid.Column="1" Background="DarkGreen" VerticalAlignment="Center">
             <TextBlock Text="SAINT-PATRICK !!!" HorizontalAlignment="Center" Width="auto" VerticalAlignment="Center" FontSize="55" FontWeight="Bold" Foreground="Orange">
-                
+
             </TextBlock>
 
         </StackPanel>
 
-        <StackPanel Grid.Row="1"  Grid.Column="2" Background="DarkOliveGreen">
+        <StackPanel Grid.Row="1"  Grid.Column="2" Background="#FFB8F353">
 
-         <!-- LINE 2-->
+            <!-- LINE 2-->
         </StackPanel>
-        <StackPanel Grid.Row="2"  Grid.Column="0" Background="Blue">
-
-        </StackPanel>
-        <StackPanel Grid.Row="2"  Grid.Column="1" Background="DarkBlue">
+        <StackPanel Grid.Row="2"  Grid.Column="0" Background="#FF7272EF">
 
         </StackPanel>
-        <StackPanel Grid.Row="2"  Grid.Column="2" Background="CadetBlue">
+        <StackPanel Grid.Row="2"  Grid.Column="1" Background="#FF4B4BF9">
+
+        </StackPanel>
+        <StackPanel Grid.Row="2"  Grid.Column="2" Background="#FF7575E2">
 
         </StackPanel>
 
